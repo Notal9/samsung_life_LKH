@@ -20,259 +20,50 @@
       --white: #FFFFFF;
       --bg: #F5F9FF;
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      background: var(--bg);
-      max-width: 480px;
-      margin: 0 auto;
-    }
-
-    /* ── 명함 이미지 ── */
-    .card-img-wrap {
-      width: 100%;
-      position: relative;
-    }
-    .card-img-wrap img {
-      width: 100%;
-      display: block;
-    }
-
-    /* ── 전화 버튼 ── */
-    .call-wrap {
-      background: var(--blue-dark);
-      padding: 16px 24px;
-    }
+    body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); max-width: 480px; margin: 0 auto; }
+    .card-img-wrap { width: 100%; }
+    .card-img-wrap img { width: 100%; display: block; }
+    .call-wrap { background: var(--blue-dark); padding: 16px 24px; }
     .call-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      width: 100%;
-      padding: 16px;
-      background: var(--white);
-      color: var(--blue-dark);
-      border-radius: 14px;
-      font-size: 16px;
-      font-weight: 700;
-      text-decoration: none;
-      letter-spacing: 0.5px;
-      transition: opacity 0.15s;
-      border: none;
-      cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      width: 100%; padding: 16px; background: var(--white); color: var(--blue-dark);
+      border-radius: 14px; font-size: 16px; font-weight: 700; text-decoration: none;
+      letter-spacing: 0.5px; border: none; cursor: pointer; transition: opacity 0.15s;
     }
     .call-btn:active { opacity: 0.8; }
-    .call-icon {
-      width: 32px;
-      height: 32px;
-      background: var(--blue-light);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-    }
-    .call-number {
-      font-size: 13px;
-      color: var(--text-light);
-      font-weight: 400;
-      margin-left: 4px;
-    }
-
-    /* ── 골드 구분선 ── */
-    .divider {
-      height: 5px;
-      background: linear-gradient(90deg, var(--accent), #FFD700, var(--accent));
-    }
-
-    /* ── 프로모션 섹션 ── */
-    .promo-section {
-      background: var(--white);
-      padding: 32px 20px 40px;
-    }
-
-    .promo-label {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 18px;
-    }
-    .promo-badge {
-      background: var(--blue);
-      color: white;
-      font-size: 10px;
-      font-weight: 700;
-      padding: 3px 10px;
-      border-radius: 4px;
-      letter-spacing: 1.5px;
-    }
-    .promo-date {
-      font-size: 11px;
-      color: var(--text-light);
-    }
-
-    .promo-card {
-      border: 1.5px solid #CCE0FF;
-      border-radius: 18px;
-      overflow: hidden;
-    }
-
-    .promo-head {
-      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
-      padding: 22px 20px 18px;
-      position: relative;
-    }
-    .promo-hot {
-      position: absolute;
-      top: 14px; right: 14px;
-      background: var(--accent);
-      color: #1A1000;
-      font-size: 10px;
-      font-weight: 700;
-      padding: 4px 10px;
-      border-radius: 20px;
-    }
-    .promo-name {
-      font-family: 'Noto Serif KR', serif;
-      font-size: 19px;
-      font-weight: 700;
-      color: white;
-      margin-bottom: 5px;
-      line-height: 1.3;
-    }
-    .promo-sub {
-      font-size: 12px;
-      color: rgba(255,255,255,0.72);
-    }
-
-    .promo-body {
-      padding: 22px 20px;
-    }
-
-    .benefit-list {
-      list-style: none;
-      margin-bottom: 18px;
-    }
-    .benefit-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      padding: 10px 0;
-      border-bottom: 1px dashed #E3F0FF;
-      font-size: 14px;
-      color: var(--text-mid);
-      line-height: 1.55;
-    }
+    .call-icon { width: 32px; height: 32px; background: var(--blue-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+    .call-number { font-size: 13px; color: var(--text-light); font-weight: 400; margin-left: 4px; }
+    .divider { height: 5px; background: linear-gradient(90deg, var(--accent), #FFD700, var(--accent)); }
+    .promo-section { background: var(--white); padding: 32px 20px 40px; }
+    .promo-label { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; }
+    .promo-badge { background: var(--blue); color: white; font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 4px; letter-spacing: 1.5px; }
+    .promo-date { font-size: 11px; color: var(--text-light); }
+    .promo-card { border: 1.5px solid #CCE0FF; border-radius: 18px; overflow: hidden; }
+    .promo-head { background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%); padding: 22px 20px 18px; position: relative; }
+    .promo-hot { position: absolute; top: 14px; right: 14px; background: var(--accent); color: #1A1000; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 20px; }
+    .promo-name { font-family: 'Noto Serif KR', serif; font-size: 19px; font-weight: 700; color: white; margin-bottom: 5px; line-height: 1.3; }
+    .promo-sub { font-size: 12px; color: rgba(255,255,255,0.72); }
+    .promo-body { padding: 22px 20px; }
+    .benefit-list { list-style: none; margin-bottom: 18px; }
+    .benefit-list li { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px dashed #E3F0FF; font-size: 14px; color: var(--text-mid); line-height: 1.55; }
     .benefit-list li:last-child { border-bottom: none; }
-    .b-icon {
-      width: 22px;
-      height: 22px;
-      background: var(--blue-light);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 11px;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    .tip-box {
-      background: var(--blue-light);
-      border-left: 3px solid var(--blue);
-      border-radius: 10px;
-      padding: 14px 16px;
-      font-size: 13px;
-      color: var(--blue-dark);
-      line-height: 1.65;
-      margin-bottom: 20px;
-    }
+    .b-icon { width: 22px; height: 22px; background: var(--blue-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0; margin-top: 1px; }
+    .tip-box { background: var(--blue-light); border-left: 3px solid var(--blue); border-radius: 10px; padding: 14px 16px; font-size: 13px; color: var(--blue-dark); line-height: 1.65; margin-bottom: 20px; }
     .tip-box strong { color: var(--blue); }
-
-    .detail-btn {
-      display: block;
-      width: 100%;
-      padding: 15px;
-      background: var(--blue);
-      color: white;
-      text-align: center;
-      border-radius: 12px;
-      font-size: 14px;
-      font-weight: 700;
-      text-decoration: none;
-      letter-spacing: 0.5px;
-      border: none;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
+    .detail-btn { display: block; width: 100%; padding: 15px; background: var(--blue); color: white; text-align: center; border-radius: 12px; font-size: 14px; font-weight: 700; text-decoration: none; letter-spacing: 0.5px; border: none; cursor: pointer; transition: background 0.2s; }
     .detail-btn:active { background: var(--blue-dark); }
-
-    /* ── 링크 섹션 ── */
-    .links-section {
-      background: var(--bg);
-      padding: 32px 20px 48px;
-    }
-    .links-title {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--text-light);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-    }
-
-    .link-item {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 15px 16px;
-      background: white;
-      border-radius: 14px;
-      text-decoration: none;
-      margin-bottom: 10px;
-      border: 1px solid #E3EEFF;
-      transition: border-color 0.2s, transform 0.15s;
-    }
+    .links-section { background: var(--bg); padding: 32px 20px 48px; }
+    .links-title { font-size: 12px; font-weight: 700; color: var(--text-light); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; }
+    .link-item { display: flex; align-items: center; gap: 14px; padding: 15px 16px; background: white; border-radius: 14px; text-decoration: none; margin-bottom: 10px; border: 1px solid #E3EEFF; transition: border-color 0.2s, transform 0.15s; }
     .link-item:active { transform: scale(0.98); border-color: var(--blue); }
-
-    .l-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      background: var(--blue-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      flex-shrink: 0;
-    }
+    .l-icon { width: 42px; height: 42px; border-radius: 12px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
     .l-text { flex: 1; }
-    .l-name {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 2px;
-    }
-    .l-desc {
-      font-size: 11px;
-      color: var(--text-light);
-      line-height: 1.4;
-    }
+    .l-name { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+    .l-desc { font-size: 11px; color: var(--text-light); line-height: 1.4; }
     .l-arrow { color: #CBD5E0; font-size: 16px; }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--blue-dark);
-      padding: 22px 20px;
-      text-align: center;
-    }
-    footer p {
-      font-size: 10px;
-      color: rgba(255,255,255,0.38);
-      line-height: 1.9;
-    }
+    footer { background: var(--blue-dark); padding: 22px 20px; text-align: center; }
+    footer p { font-size: 10px; color: rgba(255,255,255,0.38); line-height: 1.9; }
   </style>
 </head>
 <body>
@@ -282,69 +73,176 @@
     <img src="제목을_입력해주세요___2_.png" alt="이경희 컨설턴트 명함" />
   </div>
 
-  <!-- 전화 연결 버튼 -->
+  <!-- ★★★ 수정1: 전화번호 ★★★
+       010-0000-0000 을 찾아서 실제 번호로 바꾸세요 (2곳) -->
   <div class="call-wrap">
-    <a href="tel:010-9657-0080" class="call-btn">
+    <a href="tel:010-0000-0000" class="call-btn">
       <div class="call-icon">📞</div>
-      <span>지금 바로 전화 연결<span class="call-number">010-9657-0080</span></span>
+      <span>지금 바로 전화 연결<span class="call-number">010-0000-0000</span></span>
     </a>
   </div>
 
-  <!-- 골드 구분선 -->
   <div class="divider"></div>
 
-  <!-- 프로모션 섹션 -->
-  <section class="promo-section">
+  <style>
+    /* 추가 스타일 */
+    .promo-tag { display: inline-block; background: var(--accent); color: #1A1000; font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-bottom: 8px; }
+    .stat-row { display: flex; gap: 8px; margin-bottom: 16px; }
+    .stat-box { flex: 1; background: var(--blue-dark); border-radius: 10px; padding: 10px 8px; text-align: center; }
+    .stat-num { font-size: 16px; font-weight: 700; color: var(--accent); line-height: 1.2; }
+    .stat-label { font-size: 10px; color: rgba(255,255,255,0.7); margin-top: 2px; line-height: 1.3; }
+    .table-wrap { border: 1.5px solid #CCE0FF; border-radius: 12px; overflow: hidden; margin-bottom: 16px; }
+    .table-head { display: grid; grid-template-columns: 1fr 80px 80px; background: var(--blue); padding: 8px 12px; }
+    .table-head span { font-size: 11px; font-weight: 700; color: white; text-align: center; }
+    .table-head span:first-child { text-align: left; }
+    .table-row { display: grid; grid-template-columns: 1fr 80px 80px; padding: 9px 12px; border-top: 1px dashed #E3F0FF; background: white; }
+    .table-row:nth-child(even) { background: #F7FBFF; }
+    .table-row span { font-size: 12px; color: var(--text-mid); text-align: center; }
+    .table-row span:first-child { text-align: left; color: var(--text); font-weight: 500; }
+    .table-row .male { color: var(--blue); font-weight: 700; }
+    .table-row .female { color: #E91E8C; font-weight: 700; }
+    .table-row.highlight { background: #FFF8E1; }
+    .table-row.highlight span:first-child { color: var(--blue-dark); font-weight: 700; }
+    .table-total { display: grid; grid-template-columns: 1fr 80px 80px; padding: 10px 12px; background: var(--blue-dark); }
+    .table-total span { font-size: 13px; font-weight: 700; color: white; text-align: center; }
+    .table-total span:first-child { text-align: left; }
+    .notice-box { background: #FFF3E0; border-left: 3px solid var(--accent); border-radius: 8px; padding: 10px 12px; font-size: 11px; color: #7B4F00; line-height: 1.7; margin-bottom: 16px; }
+    .right-box { background: var(--blue-light); border-radius: 12px; padding: 14px; margin-bottom: 16px; }
+    .right-box-title { font-size: 12px; font-weight: 700; color: var(--blue-dark); margin-bottom: 10px; }
+    .right-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px dashed #CCE0FF; font-size: 12px; }
+    .right-row:last-child { border-bottom: none; }
+    .right-row .r-label { color: var(--text-mid); }
+    .right-row .r-val { font-weight: 700; color: var(--blue-dark); }
+    .right-row .r-val.accent { color: var(--accent); }
+  </style>
 
+  <section class="promo-section">
     <div class="promo-label">
       <span class="promo-badge">PROMOTION</span>
-      <span class="promo-date">2025년 4월 추천 상품</span>
+      <span class="promo-date">2026년 4월 추천 상품</span>
     </div>
 
     <div class="promo-card">
       <div class="promo-head">
-        <span class="promo-hot">🔥 이달의 특가</span>
-        <div class="promo-name">삼성생명 건강보험 플러스</div>
-        <div class="promo-sub">암·심장·뇌 3대 질병 집중 보장</div>
+        <span class="promo-tag">🧠 레켐비 보장</span>
+        <div class="promo-name">삼성생명 인생대표 건강보험</div>
+        <div class="promo-sub">치매통합치료비 특약 포함 · 알츠하이머 신약 레켐비 보장</div>
       </div>
 
       <div class="promo-body">
-        <ul class="benefit-list">
-          <li>
-            <div class="b-icon">✅</div>
-            <span>암 진단 시 <strong>최대 5천만 원</strong> 일시 지급</span>
-          </li>
-          <li>
-            <div class="b-icon">✅</div>
-            <span>뇌졸중·급성심근경색 <strong>수술비·입원비</strong> 별도 지급</span>
-          </li>
-          <li>
-            <div class="b-icon">✅</div>
-            <span>비갱신형 — <strong>보험료가 오르지 않아요</strong></span>
-          </li>
-          <li>
-            <div class="b-icon">✅</div>
-            <span>이달 가입 시 <strong>첫 3개월 보험료 30% 할인</strong></span>
-          </li>
-        </ul>
+
+        <!-- 핵심 수치 3개 -->
+        <div class="stat-row">
+          <div class="stat-box">
+            <div class="stat-num">80%</div>
+            <div class="stat-label">아밀로이드 베타<br/>축적 감소</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">27%</div>
+            <div class="stat-label">인지기능 저하<br/>지연 효과</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">2,200만</div>
+            <div class="stat-label">레켐비 최대<br/>보장금액</div>
+          </div>
+        </div>
+
+        <!-- 치매통합치료비 특약 보장 -->
+        <div class="right-box">
+          <div class="right-box-title">🔵 치매통합치료비 특약 보장 내용</div>
+          <div class="right-row">
+            <span class="r-label">표적치매치료비 (레켐비)</span>
+            <span class="r-val accent">최대 2,200만원</span>
+          </div>
+          <div class="right-row">
+            <span class="r-label">급여치매검사비 (CT/MRI/PET)</span>
+            <span class="r-val">연간 30만원</span>
+          </div>
+          <div class="right-row">
+            <span class="r-label">급여치매치료제</span>
+            <span class="r-val">연간 60만원</span>
+          </div>
+          <div class="right-row">
+            <span class="r-label">재활/정신요법</span>
+            <span class="r-val">60만원 (6회×10회)</span>
+          </div>
+          <div class="right-row">
+            <span class="r-label">CDR 척도 검사비</span>
+            <span class="r-val">연간 10만원</span>
+          </div>
+        </div>
+
+        <!-- 보험료 표 -->
+        <div style="font-size:11px; color:var(--text-light); margin-bottom:8px;">
+          📋 인생대표 건강보험 · 60세 가입 · 20년납 · 100세 만기 (표준체)
+        </div>
+        <div class="table-wrap">
+          <div class="table-head">
+            <span>보장 항목</span>
+            <span>남자</span>
+            <span>여자</span>
+          </div>
+          <div class="table-row">
+            <span>암진단보험료납입지원</span>
+            <span class="male">14,780</span>
+            <span class="female">6,750</span>
+          </div>
+          <div class="table-row">
+            <span>뇌혈관질환진단</span>
+            <span class="male">34,680</span>
+            <span class="female">23,020</span>
+          </div>
+          <div class="table-row">
+            <span>허혈심장질환진단</span>
+            <span class="male">20,600</span>
+            <span class="female">12,780</span>
+          </div>
+          <div class="table-row highlight">
+            <span>치매통합치료비 (레켐비+검사/재활)</span>
+            <span class="male">14,376</span>
+            <span class="female">18,444</span>
+          </div>
+          <div class="table-row">
+            <span>치매직접치료통원</span>
+            <span class="male">868</span>
+            <span class="female">1,260</span>
+          </div>
+          <div class="table-row">
+            <span>경증이상치매진단</span>
+            <span class="male">25,200</span>
+            <span class="female">25,900</span>
+          </div>
+          <div class="table-row">
+            <span>웰에이징 골대통</span>
+            <span class="male">7,034</span>
+            <span class="female">10,970</span>
+          </div>
+          <div class="table-total">
+            <span>합계 (월 보험료)</span>
+            <span>120,358원</span>
+            <span>101,334원</span>
+          </div>
+        </div>
 
         <div class="tip-box">
           💡 <strong>이런 분께 추천해요</strong><br/>
-          기존 보험의 보장 공백이 걱정되시는 40~50대, 갱신 때마다 오르는 보험료에 지치신 분
+          레켐비 치료비 걱정되시는 분, 치매 진단부터 치료·재활까지 한 번에 준비하고 싶으신 40~60대
         </div>
 
-        <!-- 상세 페이지 링크 있을 경우 href에 URL 입력 -->
-        <a href="#" class="detail-btn">상세 보장 내용 확인하기 →</a>
+        <div class="notice-box">
+          ※ 교육용 자료로 고객에게 제시·교부 할 수 없으며 온라인 게시·전송 할 수 없습니다.<br/>
+          정확한 내용은 약관과 상품설명서를 확인하시기 바랍니다.
+        </div>
+
+        <a href="tel:010-9657-0080" class="detail-btn">📞 지금 바로 상담받기 →</a>
       </div>
     </div>
-
   </section>
 
-  <!-- 링크 섹션 -->
   <section class="links-section">
     <div class="links-title">보험 인사이트</div>
 
-    <!-- 인스타 카드뉴스 링크들 — href에 인스타 게시물 URL 입력 -->
+    <!-- ★★★ 수정11: 링크1 URL ★★★  href="#" 의 # 대신 인스타 URL 붙여넣기 -->
     <a href="#" class="link-item">
       <div class="l-icon">🚫</div>
       <div class="l-text">
@@ -354,6 +252,7 @@
       <span class="l-arrow">›</span>
     </a>
 
+    <!-- ★★★ 수정12: 링크2 URL ★★★  href="#" 의 # 대신 인스타 URL 붙여넣기 -->
     <a href="#" class="link-item">
       <div class="l-icon">💸</div>
       <div class="l-text">
@@ -363,6 +262,7 @@
       <span class="l-arrow">›</span>
     </a>
 
+    <!-- ★★★ 수정13: 링크3 URL ★★★  href="#" 의 # 대신 인스타 URL 붙여넣기 -->
     <a href="#" class="link-item">
       <div class="l-icon">🔍</div>
       <div class="l-text">
@@ -372,6 +272,7 @@
       <span class="l-arrow">›</span>
     </a>
 
+    <!-- ★★★ 수정14: 링크4 URL ★★★  href="#" 의 # 대신 URL 붙여넣기 -->
     <a href="#" class="link-item">
       <div class="l-icon">📋</div>
       <div class="l-text">
@@ -381,6 +282,7 @@
       <span class="l-arrow">›</span>
     </a>
 
+    <!-- ★★★ 수정15: 링크5 URL ★★★  href="#" 의 # 대신 예약 링크 붙여넣기 -->
     <a href="#" class="link-item">
       <div class="l-icon">📅</div>
       <div class="l-text">
